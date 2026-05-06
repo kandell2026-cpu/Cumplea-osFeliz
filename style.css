@@ -8,17 +8,19 @@
 body 
 {
     background-color: #ffc0cb; 
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow-x: hidden; 
+    padding: 20px; 
 }
 
 .container 
 {
-    text-align: center;
-    position: relative;
+   text-align: center;
+    width: 100%;
+    max-width: 400px;
 }
 
 .texto-cumple 
@@ -136,5 +138,17 @@ body
     to 
     {
         transform: translateY(105vh) rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .cake {
+        transform: scale(0.7); /* Hace el pastel un 30% más pequeño */
+        margin-bottom: -40px; /* Reduce espacio sobrante */
+    }
+
+    .texto-cumple {
+        font-size: 2.2em; /* Letra un poco más pequeña para que no se corte */
+        white-space: normal; /* Permite que el texto baje si es muy largo */
     }
 }
