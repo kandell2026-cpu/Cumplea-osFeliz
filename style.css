@@ -30,7 +30,7 @@ body
     position: relative;
     width: 250px;
     height: 220px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     animation: drop 1.5s ease-out forwards;
 }
 
@@ -42,7 +42,8 @@ body
     height: 15px;
     background: #ccc;
     border-radius: 10px;
-    left: -25px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .layer 
@@ -94,14 +95,12 @@ body
 
 .texto-cumple 
 {
+    width: 100%;
     font-family: 'Dancing Script', cursive;
     color: #c2185b;
     font-size: clamp(1.8em, 8vw, 3.5em);
-    font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
     text-align: center;
-    line-height: 1.2;
-    min-height: 1.2em;
+    margin: 0 auto;
 }
 
 .confeti 
