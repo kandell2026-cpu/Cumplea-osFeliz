@@ -7,7 +7,7 @@
 
 body 
 {
-    background-color: #ffc0cb; 
+    background-color: #3e71fc; 
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@ body
 .candle 
 {
     position: absolute;
-    background: #e91e63;
+    background: #fff42b;
     width: 12px;
     height: 40px;
     top: 15px;
@@ -83,7 +83,7 @@ body
 .flame 
 {
     position: absolute;
-    background: orange;
+    background: rgb(253, 33, 22);
     width: 15px;
     height: 25px;
     border-radius: 50% 50% 20% 20%;
@@ -97,7 +97,7 @@ body
 {
     width: 100%;
     font-family: 'Dancing Script', cursive;
-    color: #c2185b;
+    color: #140d47;
     font-size: clamp(1.8em, 8vw, 3.5em);
     text-align: center;
     margin: 0 auto;
